@@ -5,12 +5,6 @@
     <head>
         <meta charset="utf-8">
         <title>Kevin Thalmann</title>
-        <!--Einbinden von PyScript
-        <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
-        <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
-        <Einbinden von Libs-->
-        <py env>
-        </py>
         <style>
             *{
                 margin: 0;
@@ -60,7 +54,8 @@
                 bottom: 25px;
                 left: 50%;
                 transform: translate(-50%);
-                font-size: 30px
+                font-size: 30px;
+                display: flex;
             }
             .wrapper .sidenav .media a{
                 margin: 20px;
@@ -80,22 +75,22 @@
                 padding: 30px;
 
             }
-            #section_home{
+            #Home{
                 background: rgb(102, 100, 100)
             }
-            #section_kurzprofil{
+            #Kurzprofil{
                 background: rgb(27, 26, 26)
             }
-            #section_softwareskills{
+            #Softwareskills{
                 background: rgb(102, 100, 100)
             }
-            #section_programmierskills{
+            #Programmierskills{
                 background: rgb(27, 26, 26)
             }
-            #section_bildungsweg{
+            #Bildungsweg{
                 background: rgb(102, 100, 100)
             }
-            #section_hobbys{
+            #Hobbys{
                 background: rgb(27, 26, 26)
             }
             .wrapper .image{
@@ -103,6 +98,68 @@
                 width: 100%;
                 height: 100%;
             }
+            .main_content .python{
+                position: relative;
+                height: 60px;
+                width: 50%;
+                background: rgba(108, 155, 103, 0.959);
+                border-radius: 10px;
+                margin-top: 60px;
+                margin-left: 5%;
+                overflow: hidden;
+            }
+            .main_content .python__fill{
+                width: 100%;
+                height: 100%;
+                background: rgb(15, 49, 6);
+                transition: transform 2s;
+                
+            }
+            .main_content .python__fill:hover{
+                background: rgb(15, 49, 6);
+                transform: translateX(85%);
+            }
+            .main_content .python__text{
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 20px;
+                font: bold 20px 'Quicksand', sans-serif;
+            }
+
+            .main_content .matlab{
+                position: relative;
+                height: 60px;
+                width: 50%;
+                background: rgba(108, 155, 103, 0.959);
+                border-radius: 10px;
+                margin-top: 70px;
+                margin-left: 5%;
+                overflow: hidden;
+            }
+            .main_content .matlab__fill{
+                width: 100%;
+                height: 100%;
+                background: rgb(15, 49, 6);
+                transition: transform 2s;
+                
+            }
+            .main_content .matlab__fill:hover{
+                background: rgb(15, 49, 6);
+                transform: translateX(50%);
+            }
+            .main_content .matlab__text{
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 20px;
+                font: bold 20px 'Quicksand', sans-serif;
+            }
+
+
+
+
+
         </style>
         <script src="https://kit.fontawesome.com/23f815f911.js" crossorigin="anonymous"></script>
     </head>
@@ -116,12 +173,12 @@
                     <img class="image" src="/Bewerbung/Foto.jpg" alt="Bewerbungsfoto" title="BEWERBUNGSFOTO">
                 </div>
                 <ul>
-                    <li><a href="#section_home"><i class="fa-solid fa-home"></i> Home</a></li>
-                    <li><a href="#section_kurzprofil"><i class="fa-solid fa-user"></i> Kurzprofil</a></li>
-                    <li><a href="#section_softwareskills"><i class="fa-solid fa-toolbox"></i> Softwareskills</a></li>
-                    <li><a href="#section_programmierskills"><i class="fa-brands fa-python"></i> Programmierskills</a></li>
-                    <li><a href="#section_bildungsweg"><i class="fa-solid fa-user-graduate"></i> Bildungsweg</a></li>
-                    <li><a href="#section_hobbys"><i class="fa-solid fa-weight-hanging"></i> Hobbys</a></li>
+                    <li><a href="#Home"><i class="fa-solid fa-home"></i> Home</a></li>
+                    <li><a href="#Kurzprofil"><i class="fa-solid fa-user"></i> Kurzprofil</a></li>
+                    <li><a href="#Softwareskills"><i class="fa-solid fa-toolbox"></i> Softwareskills</a></li>
+                    <li><a href="#Programmierskills"><i class="fa-brands fa-python"></i> Programmierskills</a></li>
+                    <li><a href="#Bildungsweg"><i class="fa-solid fa-user-graduate"></i> Bildungsweg</a></li>
+                    <li><a href="#Hobbys"><i class="fa-solid fa-weight-hanging"></i> Hobbys</a></li>
                 </ul>
                 <div class="media">
                     <a href="https://www.github.com/KevinThalmann222"><i class="fa-brands fa-github"></i></a>
@@ -130,23 +187,30 @@
             </div>
 
             <div class="main_content">
-                <section id="section_home">
-                    <p>Hallo meine Name ist Kevin Thalmann  </p>
-                        <!--py-script src=""/-->
+                <section id="Home">
+                    <p>Hallo meine Name ist Kevin Thalmann</p>
                 </section>
-                <section id="section_kurzprofil">
+                <section id="Kurzprofil">
                     <p>Kurzprofil</p>
                 </section>
-                <section id="section_softwareskills">
+                <section id="Softwareskills">
                     <p>Softwareskills</p>
+                    <div class="python">
+                        <div class="python__fill"></div>
+                        <span class="python__text">Python</span>
+                    </div>
+                    <div class="matlab">
+                        <div class="matlab__fill"></div>
+                        <span class="matlab__text">Matlab</span>
+                    </div>
                 </section>
-                <section id="section_programmierskills">
+                <section id="Programmierskills">
                     <p>Programmierskills</p>
                 </section>
-                <section id="section_bildungsweg">
+                <section id="Bildungsweg">
                     <p>Bildungsweg</p>
                 </section>
-                <section id="section_hobbys">
+                <section id="Hobbys">
                     <p>Hobbys</p>
                 </section>
             </div>
