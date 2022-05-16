@@ -5,162 +5,7 @@
     <head>
         <meta charset="utf-8">
         <title>Kevin Thalmann</title>
-        <style>
-            *{
-                margin: 0;
-                padding: 0;
-                overflow-x: hidden;
-                scroll-behavior: smooth;
-            }
-
-            body{
-                font-family: open sans;
-            }
-            a{
-                color: white;
-                text-decoration: none;
-            }
-            .wrapper .sidenav{
-                position: fixed;
-                left: 0;
-                top: 0;
-                width: 20vw;
-                height: 100vh;
-                background: #252525;
-
-            }
-            .wrapper .sidenav h1{
-                color: white;
-                text-align: center;
-                font-size: 2.8em;
-                line-height: 90px;
-                border-bottom: 1px solid white;
-            }
-            i{
-                margin-right: 10px;
-            }
-            .wrapper .sidenav ul li{
-                list-style: none;
-                font-size: 1.4em;
-                padding: 15px;
-                border-top: 0.1px solid rgb(102, 100, 100);
-            }
-            .wrapper .sidenav ul li:hover{
-                font-size: 1.5em;
-                font-weight: 1000;
-            }
-            .wrapper .sidenav .media{
-                position: absolute;
-                bottom: 25px;
-                left: 50%;
-                transform: translate(-50%);
-                font-size: 30px;
-                display: flex;
-            }
-            .wrapper .sidenav .media a{
-                margin: 20px;
-            }
-            .wrapper .sidenav .media a:hover{
-                font-size: 1.5em;
-            }
-            .wrapper .main_content{
-                width: 80vw;
-                margin-left: 20vw;
-               
-            }
-            section{
-                color: white;
-                font-size: 1.4em;
-                height: 100vh;
-                padding: 30px;
-
-            }
-            #Home{
-                background: rgb(102, 100, 100)
-            }
-            #Kurzprofil{
-                background: rgb(27, 26, 26)
-            }
-            #Softwareskills{
-                background: rgb(102, 100, 100)
-            }
-            #Programmierskills{
-                background: rgb(27, 26, 26)
-            }
-            #Bildungsweg{
-                background: rgb(102, 100, 100)
-            }
-            #Hobbys{
-                background: rgb(27, 26, 26)
-            }
-            .wrapper .image{
-                object-position: 0px 0px;
-                width: 100%;
-                height: 100%;
-            }
-            .main_content .python{
-                position: relative;
-                height: 60px;
-                width: 50%;
-                background: rgba(108, 155, 103, 0.959);
-                border-radius: 10px;
-                margin-top: 60px;
-                margin-left: 5%;
-                overflow: hidden;
-            }
-            .main_content .python__fill{
-                width: 100%;
-                height: 100%;
-                background: rgb(15, 49, 6);
-                transition: transform 2s;
-                
-            }
-            .main_content .python__fill:hover{
-                background: rgb(15, 49, 6);
-                transform: translateX(85%);
-            }
-            .main_content .python__text{
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                left: 20px;
-                font: bold 20px 'Quicksand', sans-serif;
-            }
-
-            .main_content .matlab{
-                position: relative;
-                height: 60px;
-                width: 50%;
-                background: rgba(108, 155, 103, 0.959);
-                border-radius: 10px;
-                margin-top: 70px;
-                margin-left: 5%;
-                overflow: hidden;
-            }
-            .main_content .matlab__fill{
-                width: 100%;
-                height: 100%;
-                background: rgb(15, 49, 6);
-                transition: transform 2s;
-                
-            }
-            .main_content .matlab__fill:hover{
-                background: rgb(15, 49, 6);
-                transform: translateX(50%);
-            }
-            .main_content .matlab__text{
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-                left: 20px;
-                font: bold 20px 'Quicksand', sans-serif;
-            }
-
-
-
-
-
-        </style>
+        <link rel="stylesheet" href="styles.css">
         <script src="https://kit.fontawesome.com/23f815f911.js" crossorigin="anonymous"></script>
     </head>
 
@@ -173,12 +18,13 @@
                     <img class="image" src="/Bewerbung/Foto.jpg" alt="Bewerbungsfoto" title="BEWERBUNGSFOTO">
                 </div>
                 <ul>
-                    <li><a href="#Home"><i class="fa-solid fa-home"></i> Home</a></li>
+                    <li><a href="#Home"><i class="fa-solid fa-home"></i> Infos</a></li>
                     <li><a href="#Kurzprofil"><i class="fa-solid fa-user"></i> Kurzprofil</a></li>
-                    <li><a href="#Softwareskills"><i class="fa-solid fa-toolbox"></i> Softwareskills</a></li>
-                    <li><a href="#Programmierskills"><i class="fa-brands fa-python"></i> Programmierskills</a></li>
-                    <li><a href="#Bildungsweg"><i class="fa-solid fa-user-graduate"></i> Bildungsweg</a></li>
-                    <li><a href="#Hobbys"><i class="fa-solid fa-weight-hanging"></i> Hobbys</a></li>
+                    <li><a href="#Programmierskills"><i class="fa-brands fa-uncharted"></i> Programmierskills</a></li>
+                    <li><a href="#Berufserfahrung"><i class="fa-solid fa-briefcase"></i> Berufserfahrung</a></li>
+                    <li><a href="#Ausbildung"><i class="fa-solid fa-user-graduate"></i> Ausbildung</a></li>
+                    <li><a href="#Softwareskills"><i class="fa-brands fa-python"></i> Python Projekte</a></li>
+                    
                 </ul>
                 <div class="media">
                     <a href="https://www.github.com/KevinThalmann222"><i class="fa-brands fa-github"></i></a>
@@ -188,13 +34,76 @@
 
             <div class="main_content">
                 <section id="Home">
-                    <p>Hallo meine Name ist Kevin Thalmann</p>
+                    <h1>Persönliche Informationen</h1>
+                    <div class="profil">
+                        <ul>
+                            <li><a1><i class="fa-solid fa-location-pin"></i>Geburtsdatum / -ort</a1></li>
+                            <li><a>22.02.1994 in 37154 Northeim</a></li><br>
+                            <li><a1><i class="fa-solid fa-people-roof"></i>Familienstand</a1></li>
+                            <li><a>ledig</a></li><br>
+                            <li><a1><i class="fa-solid fa-earth-europe"></i>Staatsangehörigkeit</a1></li>
+                            <li><a>deutsch</a></li><br>
+                            <li><a1><i class="fa-solid fa-phone"></i>Telefonnummer</a1></li>
+                            <li><a>+49 1575 8485811</a></li><br>
+                            <li><a1><i class="fa-solid fa-envelope"></i>E-Maill Adresse</a1></li>
+                            <li><a>kevin_thalmann@yahoo.de</a></li><br>
+                            <li><a1><i class="fa-solid fa-address-book"></i>Adresse</a1></li>
+                            <li><a>Spielmannstraße 16A</a></li>
+                            <li><a>38106 Braunschweig</a></li><br>
+                            <li><a1><i class="fa-solid fa-briefcase"></i>Beruf</a1></li>
+                            <li><a>Entwicklungsingenieur</a></li><br>
+                        </ul>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19530.194190094313!2d10.52752402009173!3d52.2747224461932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47aff5d505e1265d%3A0xc4a51c65e9ee87a!2sSpielmannstra%C3%9Fe%2C%2038106%20Braunschweig%2C%20Deutschland!5e0!3m2!1sde!2snl!4v1652702254920!5m2!1sde!2snl" 
+                            width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
                 </section>
                 <section id="Kurzprofil">
-                    <p>Kurzprofil</p>
+                    <h1>Kurzprofil</h1>
+                    <div class="Kurzprofil1">
+                        <div class="Kurzprofil1__fill"></div>
+                        <span class="Kurzprofil1__text">Selbstständig & strukturiertes Arbeiten</span>
+                    </div>
+                    <div class="Kurzprofil2">
+                        <div class="Kurzprofil2__fill"></div>
+                        <span class="Kurzprofil2__text">Kommunikations- und Teamfähigkeit</span>
+                    </div>
+                    <div class="Kurzprofil3">
+                        <div class="Kurzprofil3__fill"></div>
+                        <span class="Kurzprofil3__text">Multitaskingfähig</span>
+                    </div>
+                    <div class="Kurzprofil4">
+                        <div class="Kurzprofil4__fill"></div>
+                        <span class="Kurzprofil4__text">Geduldig</span>
+                    </div>
+                    <div class="Kurzprofil5">
+                        <div class="Kurzprofil5__fill"></div>
+                        <span class="Kurzprofil5__text">Ordentlich</span>
+                    </div>
+                    <div class="Kurzprofil6">
+                        <div class="Kurzprofil6__fill"></div>
+                        <span class="Kurzprofil6__text">Eigeninitiativ</span>
+                    </div>
+                    <div class="Kurzprofil7">
+                        <div class="Kurzprofil7__fill"></div>
+                        <span class="Kurzprofil7__text">Zielstrebig</span>
+                    </div>
+                    <div class="Kurzprofil8">
+                        <div class="Kurzprofil8__fill"></div>
+                        <span class="Kurzprofil8__text">Kreativ</span>
+                    </div>
+                    <div class="Kurzprofil9">
+                        <div class="Kurzprofil9__fill"></div>
+                        <span class="Kurzprofil9__text">Zuverlässig</span>
+                    </div>
+                    <div class="Kurzprofil10">
+                        <div class="Kurzprofil10__fill"></div>
+                        <span class="Kurzprofil10__text">Motiviert</span>
+                    </div>
                 </section>
-                <section id="Softwareskills">
-                    <p>Softwareskills</p>
+
+                <section id="Programmierskills">
+                    <h1>Programmier- und Softwareskills</h1>
                     <div class="python">
                         <div class="python__fill"></div>
                         <span class="python__text">Python</span>
@@ -203,17 +112,171 @@
                         <div class="matlab__fill"></div>
                         <span class="matlab__text">Matlab</span>
                     </div>
+                    <div class="ccode">
+                        <div class="ccode__fill"></div>
+                        <span class="ccode__text">C++</span>
+                    </div>
+                    <div class="git">
+                        <div class="git__fill"></div>
+                        <span class="git__text">GIT und SVN</span>
+                    </div>
+                    <div class="html">
+                        <div class="html__fill"></div>
+                        <span class="html__text">HTML und CSS</span>
+                    </div>
+                    <div class="jira">
+                        <div class="jira__fill"></div>
+                        <span class="jira__text">Jira</span>
+                    </div>
+                    <div class="ms">
+                        <div class="ms__fill"></div>
+                        <span class="ms__text">MS Office</span>
+                    </div>
+                    <div class="cad">
+                        <div class="cad__fill"></div>
+                        <span class="cad__text">CAD - Tools</span>
+                    </div>
+                    <div class="inca">
+                        <div class="inca__fill"></div>
+                        <span class="inca__text">INCA / INCA-Flow</span>
+                    </div>
                 </section>
-                <section id="Programmierskills">
-                    <p>Programmierskills</p>
+                <section id="Berufserfahrung">
+                    <h1>Berufserfahrung</h1>
+                        <div class="IAV_SW">
+                            <ul>
+                                <li><a1>seit 05/2021</a1></li>
+                                <li><a2>IAV GmbH</a2></li>
+                                <li><a3>Nordhoffstraße 5, 38518 Gifhorn</a3></li>
+                                <li><a2>Entwicklungsingenieur:</a2></li>
+                                <li><a3>Softwareentwicklung Toolchain</a3></li>
+                                    <div class="kontext">
+                                        <ul>
+                                            <li><a>- Entwicklung und Aufbau einer hochautomatisierten Toolkette zum Testen von Fahrwerksfunktionen</a></li>
+                                            <li><a>- Entwicklung und Validierung von Methoden zur HiL-Testunterstützung </a></li>
+                                            <li><a>- Konzeptionierung und Entwurf einer geeigneten Prozesssteuerung zur Kontrolle und Sicherstellung von Entwicklungs- und Testschritten</a></li>
+                                            <li><a>- Aufbau einer durchgehenden Versionsverwaltung des gesamten V-Modells</a></li>
+                                            <li><a>- Mitwirkung bei der Fehlerursachenanalyse und -behebung</a></li>
+                                            <li><a>- Dokumentation und Präsentation der Projektergebnisse</a></li>
+                                        </ul>
+                                    </div>
+                            </ul>
+                        </div>
+                        <div class="IAV_App">
+                            <ul>
+                                <li><a1>10/2019 - 05/2021</a1></li>
+                                <li><a2>IAV GmbH</a2></li>
+                                <li><a3>Nordhoffstraße 5, 38518 Gifhorn</a3></li>
+                                <li><a2>Entwicklungsingenieur:</a2></li>
+                                <li><a3>Motorapplikation: Fahrbarkeit</a3></li>
+                                    <div class="kontext">
+                                        <ul>
+                                            <li><a>- Applikation, Testing und Validierung von Powertrain Software, Schwerpunkt Fahrbarkeit </a></li>
+                                            <li><a>- Entwicklung, Durchführung und Auswertung von Versuchskonzepten am Motor-/ Rollenprüfstand</a></li>
+                                            <li><a>- Analyse, Bewertung und Dokumentation von Versuchs-und Erprobungsergebnissen</a></li>
+                                            <li><a>- Planung und Koordination von projektspezifischen Fahrzeugumbauten und -aufbauten</a></li>
+                                            <li><a>- Definition, Einbau und Inbetriebnahme von fahrzeugspezifischer Messtechnik</a></li>
+                                            <li><a>- Weiterentwicklung der internen Applikationsstrategien und Auswerteroutinen</a></li>
+                                            <li><a>- Erstellen von Lastenheften</a></li>
+                                            <li><a>- Teilnahme an weltweiter Versuchs- und Erprobungsfahrten</a></li>
+                                        </ul>
+                                    </div>
+                            </ul>
+                        </div>
+                        <div class="Dozent">
+                            <ul>
+                                <li><a1>seit 01/2021</a1></li>
+                                <li><a2>Technische Akademie gGmbH </a2></li>
+                                <li><a3>Frankfurter Straße 254, 38122 Braunschweig</a3></li>
+                                <li><a2>Dozent:</a2></li>
+                                <li><a3>Technisches Zeichnen in Catia</a3></li>
+                                    <div class="kontext">
+                                        <ul>
+                                            <li><a>- Anforderungen an Kontruktionen und Entwicklung aus Unternehmenssicht</a></li>
+                                            <li><a>- Grundlagen des technischen Zeichnens</a></li>
+                                            <li><a>- Passungen, Toleranzen, Oberflächengüte</a></li>
+                                            <li><a>- Projektion und Abwicklung von Fahrzeugteilen</a></li>
+                                            <li><a>- Fortgeschrittene Bemaßungstechniken</a></li>
+                                            <li><a>- Erstellen von Baugruppen</a></li>
+                                            <li><a>- Erstellen von Formeln</a></li>
+                                        </ul>
+                                    </div>
+                            </ul>
+                        </div>
                 </section>
-                <section id="Bildungsweg">
-                    <p>Bildungsweg</p>
+                <section id="Ausbildung">
+                    <h1>Ausbildung</h1>
+                    <div class="Master">
+                        <ul>
+                            <li><a1>03/2018 – 09/2019</a1></li>
+                            <li><a2>Studium Master Fahrzeugtechnik Ostfalia</a2></li>
+                            <li><a3>Hochschule für angewandte Wissenschaften, 38440 Wolfsburg</a3></li>
+                                <div class="kontext">
+                                    <ul>
+                                        <li><a1>03/2019 – 10/2019</a1></li>
+                                        <li><a2>Masterarbeit bei IAV GmbH</a2></li>
+                                        <li><a>Funktionsentwicklung</a></li>
+                                        <li><a1>Titel: Einsparungspotenzial von Car2x-Technologien</a1></li>
+                                        <li><a>- Erstellung einer Schnittstelle zwischen SUMO und Python</a></li>
+                                        <li><a>- Erstellung von Car2x Konzepten</a></li>
+                                        <li><a>- Untersuchung des NO2-Einsparungspotenzial von Car2x</a></li>
+                                        <li><a>- Vergleichen der Car2x-Konzepte untereinander</a></li>
+                                        <li><a>- Visualisierung der Ergebnisse</a></li>
+                                        <li><a>- Bewertung der Ergebnisse</a></li>
+                                    </ul>
+                                </div>
+                        </ul>
+                    </div>
+                    <div class="Bachelor">
+                        <ul>
+                            <li><a1>09/2014 – 03/2018</a1></li>
+                            <li><a2>Studium Master Fahrzeugtechnik Ostfalia</a2></li>
+                            <li><a3>Hochschule für angewandte Wissenschaften, 38440 Wolfsburg</a3></li>
+                                <div class="kontext">
+                                    <ul>
+                                        <li><a1>10/2017 – 03/2018</a1></li>
+                                        <li><a2>Bachelorarbeit bei Mercedes-AMG</a2></li>
+                                        <li><a>Systementwicklung</a></li>
+                                        <li><a1>Titel: Konzeptionierung eines Plug&Play Range Extender Moduls für ein AMG Performance Elektrofahrzeug</a1></li>
+                                        <li><a>- Bestimmung der gegebenen Randbedingungen</a></li>
+                                        <li><a>- Erstellung geeigneter Konzepte</a></li>
+                                        <li><a>- Erstellung und Bewerbung der Konzeptkriterien</a></li>
+                                        <li><a>- Auswahl und Bestimmung eines Zielkonzeptes</a></li>
+                                        <li><a>- Bewertung des ausgewählten Konzeptes</a></li>
+                                        <li><a>- Bewertung der Ergebnisse</a></li>
+
+                                        <li><a1>02/2017 – 10/2017</a1></li>
+                                        <li><a2>Praktikum bei Mercedes-AMG</a2></li>
+                                        <li><a>Entwicklung Getriebe-Triebstrang</a></li>
+                                        <li><a>- Koordination und Umsetzung von DMU-Abstimmungsthemen im Bereich Hyridisierung</a></li>
+                                        <li><a>- Konzepterstellung, -bewerbung und prototypische Umsetzung von Getriebe- und Triebstrangkomponenten</a></li>
+                                        <li><a>- Erstellen von Präsentationen und Übersichtszeichnungen als Entscheidungsgrundlage</a></li>
+                                        <li><a>- Angebotsanfrage, Fertigungs- und Versorgungskoorination, sowie technische Abstimmung für Prototypenfertigung </a></li>
+                                        <li><a>- Erstellung von Neu- und Änderungskonstruktionen, sowie Zeichnungserstellung von Bauteilen</a></li>
+                                        <li><a>- Koordination, Dokumentation und Befundung von Versuchskomponenten aus Fahrzeugerprobungen</a></li>
+                                    </ul>
+                                </div>
+                        </ul>
+                        <div class="FSG">
+                            <ul>
+                                <li><a1>09/2014 – 02/2017</a1></li>
+                                <li><a2>Mitglied der Formula Student Germany</a2></li>
+                                <li><a3>Hochschule für angewandte Wissenschaften, 38440 Wolfsburg</a3></li>
+                                <li><a1>Verantworlicher für Entwicklung von Konstruktion des Antiebstranges</a1></li>
+                        </div>
                 </section>
-                <section id="Hobbys">
-                    <p>Hobbys</p>
+                
+                <section id="Softwareskills">
+                    <h1>Python Projekte</h1>
+                    <div class="python_projekt">
+                        <p>coming soon</p>
+                    </div>
                 </section>
+
+
+
             </div>
+
 
         </div>
     </body>

@@ -1,0 +1,648 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: open sans;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.wrapper .sidenav{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 20vw;
+    height: 100vh;
+    background: #252525;
+
+}
+.wrapper .sidenav h1{
+    color: white;
+    text-align: center;
+    font-size: 2.8em;
+    line-height: 90px;
+    border-bottom: 1px solid white;
+}
+i{
+    margin-right: 10px;
+}
+.wrapper .sidenav ul li{
+    list-style: none;
+    font-size: 1.4em;
+    padding: 15px;
+    border-top: 0.1px solid rgb(102, 100, 100);
+}
+.wrapper .sidenav ul li:hover{
+    font-size: 1.5em;
+    font-weight: 1000;
+}
+.wrapper .sidenav .media{
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 30px;
+    display: flex;
+}
+.wrapper .sidenav .media a{
+    margin: 20px;
+}
+.wrapper .sidenav .media a:hover{
+    font-size: 1.5em;
+}
+.wrapper .main_content{
+    width: 80vw;
+    margin-left: 20vw;
+   
+}
+section{
+    color: white;
+    font-size: 1.4em;
+    height: 100vh;
+    padding: 30px;
+
+}
+#Home{
+    background: rgb(49, 49, 49)
+}
+#Kurzprofil{
+    background: rgb(27, 26, 26)
+}
+#Programmierskills{
+    background: rgb(49, 49, 49)
+}
+#Berufserfahrung{
+    background: rgb(27, 26, 26)
+}
+#Ausbildung{
+    background: rgb(49, 49, 49)
+}
+#Softwareskills{
+    background: rgb(27, 26, 26)
+}
+
+
+
+
+
+.wrapper .image{
+    object-position: 0px 0px;
+    width: 100%;
+    height: 100%;
+}
+.main_content h1{
+    position: relative;
+    color: white;
+    margin-left: 5%;
+    margin-bottom: 20px;
+    font-size: 1.4em;
+}
+.main_content p{
+    position: relative;
+    color: white;
+    margin-left: 5%;
+    font-size: 1.2em;
+}
+.main_content .Kurzprofil1{
+    position: relative;
+    height: 60px;
+    width: 60%;
+    background: rgb(148, 146, 146);
+    border-radius: 10px;
+    margin-top: 100px;
+    margin-left: 5%;
+    overflow: hidden;
+}
+.main_content .Kurzprofil1__fill{
+    width: 92%;
+    height: 100%;
+    background: rgb(102, 100, 100);
+    border-radius: 5px;
+
+}
+.main_content .Kurzprofil1__text{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    font: bold 20px 'Quicksand', sans-serif;
+}
+.main_content .Kurzprofil2{
+    position: relative;
+    height: 60px;
+    width: 60%;
+    background: rgb(148, 146, 146);
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 5%;
+    overflow: hidden;
+}
+.main_content .Kurzprofil2__fill{
+    width: 98%;
+    height: 100%;
+    background: rgb(102, 100, 100);
+    border-radius: 5px;
+
+}
+.main_content .Kurzprofil2__text{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    font: bold 20px 'Quicksand', sans-serif;
+}
+.main_content .Kurzprofil3{
+    position: relative;
+    height: 60px;
+    width: 60%;
+    background: rgb(148, 146, 146);
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 5%;
+    overflow: hidden;
+}
+.main_content .Kurzprofil3__fill{
+    width: 15%;
+    height: 100%;
+    background: rgb(102, 100, 100);
+    border-radius: 5px;
+
+}
+.main_content .Kurzprofil3__text{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    font: bold 20px 'Quicksand', sans-serif;
+}
+.main_content .Kurzprofil4{
+    position: relative;
+    height: 60px;
+    width: 60%;
+    background: rgb(148, 146, 146);
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 5%;
+    overflow: hidden;
+}
+.main_content .Kurzprofil4__fill{
+    width: 45%;
+    height: 100%;
+    background: rgb(102, 100, 100);
+    border-radius: 5px;
+
+}
+.main_content .Kurzprofil4__text{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    font: bold 20px 'Quicksand', sans-serif;
+}
+.main_content .Kurzprofil5{
+    position: relative;
+    height: 60px;
+    width: 60%;
+    background: rgb(148, 146, 146);
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 5%;
+    overflow: hidden;
+}
+.main_content .Kurzprofil5__fill{
+    width: 30%;
+    height: 100%;
+    background: rgb(102, 100, 100);
+    border-radius: 5px;
+
+}
+.main_content .Kurzprofil5__text{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    font: bold 20px 'Quicksand', sans-serif;
+}
+.main_content .Kurzprofil6{
+    position: relative;
+    height: 60px;
+    width: 60%;
+    background: rgb(148, 146, 146);
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 5%;
+    overflow: hidden;
+}
+.main_content .Kurzprofil6__fill{
+    width: 85%;
+    height: 100%;
+    background: rgb(102, 100, 100);
+    border-radius: 5px;
+
+}
+.main_content .Kurzprofil6__text{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    font: bold 20px 'Quicksand', sans-serif;
+}
+.main_content .Kurzprofil7{
+    position: relative;
+    height: 60px;
+    width: 60%;
+    background: rgb(148, 146, 146);
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 5%;
+    overflow: hidden;
+}
+.main_content .Kurzprofil7__fill{
+    width: 90%;
+    height: 100%;
+    background: rgb(102, 100, 100);
+    border-radius: 5px;
+
+}
+.main_content .Kurzprofil7__text{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    font: bold 20px 'Quicksand', sans-serif;
+}
+.main_content .Kurzprofil8{
+    position: relative;
+    height: 60px;
+    width: 60%;
+    background: rgb(148, 146, 146);
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 5%;
+    overflow: hidden;
+}
+.main_content .Kurzprofil8__fill{
+    width: 99%;
+    height: 100%;
+    background: rgb(102, 100, 100);
+    border-radius: 5px;
+
+}
+.main_content .Kurzprofil8__text{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    font: bold 20px 'Quicksand', sans-serif;
+}
+.main_content .Kurzprofil9{
+    position: relative;
+    height: 60px;
+    width: 60%;
+    background: rgb(148, 146, 146);
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 5%;
+    overflow: hidden;
+}
+.main_content .Kurzprofil9__fill{
+    width: 100%;
+    height: 100%;
+    background: rgb(102, 100, 100);
+    border-radius: 5px;
+
+}
+.main_content .Kurzprofil9__text{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    font: bold 20px 'Quicksand', sans-serif;
+}
+.main_content .Kurzprofil10{
+    position: relative;
+    height: 60px;
+    width: 60%;
+    background: rgb(148, 146, 146);
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 5%;
+    overflow: hidden;
+}
+.main_content .Kurzprofil10__fill{
+    width: 90%;
+    height: 100%;
+    background: rgb(102, 100, 100);
+    border-radius: 5px;
+
+}
+.main_content .Kurzprofil10__text{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    font: bold 20px 'Quicksand', sans-serif;
+}
+.main_content .python{
+    position: relative;
+    height: 60px;
+    width: 60%;
+    background: rgb(148, 146, 146);
+    border-radius: 10px;
+    margin-top: 100px;
+    margin-left: 5%;
+    overflow: hidden;
+}
+.main_content .python__fill{
+    width: 92%;
+    height: 100%;
+    background: rgb(102, 100, 100);
+    border-radius: 5px;
+
+}
+.main_content .python__text{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    font: bold 20px 'Quicksand', sans-serif;
+}
+
+.main_content .matlab{
+    position: relative;
+    height: 60px;
+    width: 60%;
+    background: rgb(148, 146, 146);
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-left: 5%;
+    overflow: hidden;
+}
+.main_content .matlab__fill{
+    width: 50%;
+    height: 100%;
+    background: rgb(102, 100, 100);
+    border-radius: 5px;
+    
+}
+.main_content .matlab__text{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    font: bold 20px 'Quicksand', sans-serif;
+}
+.main_content .ccode{
+    position: relative;
+    height: 60px;
+    width: 60%;
+    background: rgb(148, 146, 146);
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-left: 5%;
+    overflow: hidden;
+}
+.main_content .ccode__fill{
+    width: 10%;
+    height: 100%;
+    background: rgb(102, 100, 100);
+    border-radius: 5px;
+    
+}
+.main_content .ccode__text{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    font: bold 20px 'Quicksand', sans-serif;
+}
+
+.main_content .git{
+    position: relative;
+    height: 60px;
+    width: 60%;
+    background: rgb(148, 146, 146);
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-left: 5%;
+    overflow: hidden;
+}
+.main_content .git__fill{
+    width: 70%;
+    height: 100%;
+    background: rgb(102, 100, 100);
+    border-radius: 5px;
+}
+.main_content .git__text{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    font: bold 20px 'Quicksand', sans-serif;
+}
+.main_content .html{
+    position: relative;
+    height: 60px;
+    width: 60%;
+    background: rgb(148, 146, 146);
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-left: 5%;
+    overflow: hidden;
+}
+.main_content .html__fill{
+    width: 30%;
+    height: 100%;
+    background: rgb(102, 100, 100);
+    border-radius: 5px;
+    
+}
+.main_content .html__text{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    font: bold 20px 'Quicksand', sans-serif;
+}
+.main_content .jira{
+    position: relative;
+    height: 60px;
+    width: 60%;
+    background: rgb(148, 146, 146);
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-left: 5%;
+    overflow: hidden;
+}
+.main_content .jira__fill{
+    width: 70%;
+    height: 100%;
+    background: rgb(102, 100, 100);
+    border-radius: 5px;
+
+}
+.main_content .jira__text{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    font: bold 20px 'Quicksand', sans-serif;
+}
+.main_content .ms{
+    position: relative;
+    height: 60px;
+    width: 60%;
+    background: rgb(148, 146, 146);
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-left: 5%;
+    overflow: hidden;
+}
+.main_content .ms__fill{
+    width: 95%;
+    height: 100%;
+    background: rgb(102, 100, 100);
+    border-radius: 5px;
+
+}
+.main_content .ms__text{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    font: bold 20px 'Quicksand', sans-serif;
+}
+.main_content .cad{
+    position: relative;
+    height: 60px;
+    width: 60%;
+    background: rgb(148, 146, 146);
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-left: 5%;
+    overflow: hidden;
+}
+.main_content .cad__fill{
+    width: 90%;
+    height: 100%;
+    background: rgb(102, 100, 100);
+    border-radius: 5px;
+
+}
+.main_content .cad__text{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    font: bold 20px 'Quicksand', sans-serif;
+}
+.main_content .inca{
+    position: relative;
+    height: 60px;
+    width: 60%;
+    background: rgb(148, 146, 146);
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-left: 5%;
+    overflow: hidden;
+}
+.main_content .inca__fill{
+    width: 80%;
+    height: 100%;
+    background: rgb(102, 100, 100);
+    border-radius: 5px;
+
+}
+.main_content .inca__text{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    font: bold 20px 'Quicksand', sans-serif;
+}
+
+.main_content .html__text:hover{
+    font-size: 0.98em;
+}
+.main_content .git__text:hover{
+    font-size: 0.98em;
+}
+.main_content .matlab__text:hover{
+    font-size: 0.98em;
+}
+.main_content .python__text:hover{
+    font-size: 0.98em;
+}
+.main_content .inca__text:hover{
+    font-size: 0.98em;
+}
+.main_content .code__text:hover{
+    font-size: 0.98em;
+}
+.main_content .cad__text:hover{
+    font-size: 0.98em;
+}
+.main_content .ms__text:hover{
+    font-size: 0.98em;
+}
+.main_content .jira__text:hover{
+    font-size: 0.98em;
+}
+.main_content ul{
+    margin-left: 5%;
+}
+.main_content a1{
+    color: rgb(201, 199, 199);
+}
+.main_content a2{
+    color: white;
+    font-weight: bold;
+}
+.main_content .kontext ul{
+    color: white;
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+.main_content .IAV_SW {
+    margin-top: 50px;
+}
+.main_content .IAV_App {
+    margin-top: 30px;
+}
+.main_content .Dozent {
+    margin-top: 30px;
+}
+.main_content .Master {
+    margin-top: 30px;
+}
+.main_content .Bachelor {
+    margin-top: 30px;
+}
+.main_content .FSG {
+    margin-top: 30px;
+}
+
+.main_content .profil{
+    margin-top: 100px;
+}
+.main_content .profil a{
+    margin-left: 30px;
+}
+.main_content .profil iframe{
+    position: absolute;
+    left: 50%;
+    top: 15%;
+}
+.main_content .python_projekt {
+    color: white;
+    position: relative;
+    font-size: 2em;
+    left: 40%;
+    top: 50%;
+ 
+}
